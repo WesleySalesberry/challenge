@@ -7,7 +7,7 @@ Cloudinary: You will need the Cloud name:, API Key, API Secret
 
 Create a JSON web token key 
 
-add these to the .env file along with your key and uri string. The JSON token string can be changes to what ever you want
+add these to the .env file along with your key and uri string. The JSON token string can be changed to what ever you want
 
 ```
 MONGODB_URI=
@@ -33,7 +33,7 @@ npm run server
 ## Usage
 Within postman
 
-## Register an account first.
+#### Register an account first.
 Create a POST request and use this route http://localhost:3000/api/register, within headers add content-type json and within the body, select raw, then create a user:
 example:
 ```
@@ -45,7 +45,7 @@ example:
 
 This will send back a token to be used in the header to secure the upload
 
-## To upload an image. 
+#### To upload an image. 
 
 Create another POST request.
 Use the route http://localhost:3000/api/upload, in the headers add auth-token, then the token that was sent back from register, 
