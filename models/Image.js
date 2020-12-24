@@ -5,7 +5,7 @@ const ImageSchema = new Schema(
 	{
 		username: {
 			type: mongoose.Schema.Types.ObjectId,
-			ref: 'user'
+			ref: 'Username'
 		},
 		urls: [{
 			url: String,
@@ -19,4 +19,4 @@ const ImageSchema = new Schema(
 );
 
 
-module.exports = mongoose.model('image', ImageSchema);
+module.exports = mongoose.model('Image', ImageSchema);

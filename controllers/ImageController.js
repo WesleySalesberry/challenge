@@ -18,12 +18,12 @@ module.exports = {
                 }
 
                 const newImage = new ImageModel({
-                    username: req.user.id,
-                    urls: urls
-                })
+                        username: req.user.id,
+                        urls: urls
+                    })
 
-                newImage.save()
-
+                    newImage.save(newImage) 
+                    
                 res.status(200).json({
                     message: 'Images uploaded successfully',
                 })

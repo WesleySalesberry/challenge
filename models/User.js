@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { schema } = require('./Image');
+
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
@@ -17,4 +17,4 @@ const UserSchema = new Schema({
 	}
 });
 
-module.exports = mongoose.model('username', UserSchema);
+module.exports = mongoose.model('Username', UserSchema);
